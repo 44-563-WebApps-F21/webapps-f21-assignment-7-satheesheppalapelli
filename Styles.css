@@ -1,4 +1,4 @@
-p {
+p{
     text-align: center;
 }
 h3{
@@ -10,15 +10,15 @@ h2{
 .a{
     text-align: center;
 }
-p.col-sm-3{
+[id=main]{
     color:burlywood;
     text-align: left;
 }
-p.col-sm-2{
-    color:deepskyblue;
-    text-align: left;
+[id=tries]{
+        color:deepskyblue;
+        text-align: left;
 }
-p.col-sm-4{
+[id=distance]{
     color:darksalmon;
     text-align: left;
 }
