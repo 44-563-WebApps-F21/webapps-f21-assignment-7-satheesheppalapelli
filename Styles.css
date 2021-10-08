@@ -10,10 +10,6 @@ h2{
 .a{
     text-align: center;
 }
-div.container-fluid{
-    background-color:lavender;
-    text-align: center;
-}
 p.col-sm-3{
     color:burlywood;
     text-align: left;
@@ -30,7 +26,7 @@ h3:hover{
     background-color:orchid;
     color:rgb(240, 227, 240);
 }
-div.container-lg{
-    background-color:steelblue;
+div.container-fluid{
+    background-color:lavender;
     text-align: center;
 }
