@@ -14,16 +14,16 @@ div.container-fluid{
     background-color:lavender;
     text-align: center;
 }
-div.col-sm-3{
+p.col-sm-3{
     color:burlywood;
     text-align: left;
 }
-div.col-sm-2{
-    color:blueviolet;
+p.col-sm-2{
+    color:deepskyblue;
     text-align: left;
 }
-div.col-sm-4{
-    color:grey;
+p.col-sm-4{
+    color:darksalmon;
     text-align: left;
 }
 h3:hover{
