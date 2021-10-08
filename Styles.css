@@ -30,3 +30,7 @@ h3:hover{
     background-color:orchid;
     color:rgb(240, 227, 240);
 }
+div.container-lg{
+    background-color:steelblue;
+    text-align: center;
+}
