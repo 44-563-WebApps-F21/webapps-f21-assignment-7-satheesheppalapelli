@@ -1,0 +1,32 @@
+p {
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+.a{
+    text-align: center;
+}
+div.container-fluid{
+    background-color:lavender;
+    text-align: center;
+}
+div.col-sm-3{
+    color:burlywood;
+    text-align: left;
+}
+div.col-sm-2{
+    color:blueviolet;
+    text-align: left;
+}
+div.col-sm-4{
+    color:grey;
+    text-align: left;
+}
+h3:hover{
+    background-color:orchid;
+    color:rgb(240, 227, 240);
+}
