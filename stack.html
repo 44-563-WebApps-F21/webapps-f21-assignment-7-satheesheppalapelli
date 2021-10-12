@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>Stack</title>
     <link rel="stylesheet" href="Styles.css">
 </head>
 
@@ -13,7 +14,9 @@
     <label for="exampleDataList" class="form-label" id="form-label">Press the button to create an new element of type div and then add
         it to the container.</label>
     <br><br>
-    <button id="makeNewDiv" onclick="makeNewDiv()">Push value</button>
+    <button id="makenewdiv" onclick="makeNewDiv()">Push value</button>
+    <button id="popitem" onclick="popItem()">Pop</button>
+    <button id="zap" onclick="zap()">Zap value</button>
     <br><br>
     <div class="flex-container" id="target">
         <div class="stack">row item 1</div>
@@ -30,6 +33,29 @@
         element.className = "stack"
         document.getElementById('target').appendChild(element)
     }
+
+    function popItem() {
+        stackItems = document.getElementsByClassName("stack")
+        value = document.getElementById("form_input").value
+        length = stackItems.length
+        alert(length);
+        if (length > 0) {
+            stackItems[length - 1].remove();
+        }
+    }
+
+    function zap() {
+        count = 0
+        stackItems = document.getElementsByClassName("stack")
+        value = document.getElementById("form_input").value
+        for (item of stackItems) {
+            if (item.innerHTML == value) {
+                stackItems[count].remove();
+            }
+            count += 1
+        }
+        console.log("We are getting rid of all elements with '" + value + "'")
+    } 
 </script>
 
 </html>

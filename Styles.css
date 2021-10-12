@@ -1,16 +1,13 @@
 p{
     text-align: center;
 }
-h3{
-    text-align: center;
-}
 h2{
     text-align: center;
 }
 .a{
     text-align: center;
 }
-h3:hover{
+h2:hover{
     background-color:orchid;
     color:rgb(240, 227, 240);
 }
@@ -50,10 +47,19 @@ div.container-fluid{
     text-align: center;
     color:deepskyblue;
 }
-#makeNewDiv{
+#makenewdiv{
     text-align: center;
-    color:darkcyan;  
+    color:green;  
 }
+#popitem{
+    text-align: center;
+    color:red;  
+}
+#zap{
+    text-align: center;
+    color:orange;  
+}
+
 .flex-container {
     display: flex;  flex-direction:row;
     background-color: red;
