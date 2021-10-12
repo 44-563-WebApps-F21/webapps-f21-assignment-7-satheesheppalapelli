@@ -10,21 +10,21 @@ h2{
 .a{
     text-align: center;
 }
-[id=main]{
-    color:burlywood;
-    text-align: left;
-}
-[id=tries]{
-        color:deepskyblue;
-        text-align: left;
-}
-[id=distance]{
-    color:darksalmon;
-    text-align: left;
-}
 h3:hover{
     background-color:orchid;
     color:rgb(240, 227, 240);
+}
+#main{
+    color:burlywood;
+    text-align: left;
+}
+#tries{
+        color:deepskyblue;
+        text-align: left;
+}
+#distance{
+    color:darksalmon;
+    text-align: left;
 }
 div.container-fluid{
     background-color:lavender;
@@ -40,3 +40,33 @@ div.container-fluid{
     text-align: center;
     color: cadetblue;
 }
+
+#form_input
+{
+    text-align: center;
+    color:darkseagreen;
+}
+#form-label{
+    text-align: center;
+    color:deepskyblue;
+}
+#makeNewDiv{
+    text-align: center;
+    color:darkcyan;  
+}
+.flex-container {
+    display: flex;  flex-direction:row;
+    background-color: red;
+}
+.flex-container > div {  /*div children of the flex container*/
+background-color: #f1f1f1; 
+margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+   .flex-container{
+       flex-direction:column;
+       background-color: green;
+    }
+  }

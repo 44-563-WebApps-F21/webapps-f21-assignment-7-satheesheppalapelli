@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <h2>Satheesh Eppalapelli builds a stack</h2>
+    <br>
+    <input type="text" class="form-control" id="form_input" name="inputElement" placeholder="Enter a Text">
+    <br><br>
+    <label for="exampleDataList" class="form-label" id="form-label">Press the button to create an new element of type div and then add
+        it to the container.</label>
+    <br><br>
+    <button id="makeNewDiv" onclick="makeNewDiv()">Push value</button>
+    <br><br>
+    <div class="flex-container" id="target">
+        <div class="stack">row item 1</div>
+        <div class="stack">row item 2</div>
+        <div class="stack">row item 3</div>
+    </div>
+</body>
+<script>
+
+    function makeNewDiv() {
+        let element = document.createElement("div")
+        value = document.getElementById("form_input").value
+        element.innerHTML = value
+        element.className = "stack"
+        document.getElementById('target').appendChild(element)
+    }
+</script>
+
+</html>
