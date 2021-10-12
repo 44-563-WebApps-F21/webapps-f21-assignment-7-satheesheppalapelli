@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Reaction Game</title>
+    <link rel="stylesheet" href="Styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h2>Satheesh Eppalapelli Reaction Timer</h2>
+    <p id="target">Your Time </p>
+    <p id="countDown">Count</p>
+
+    <div class="d-flex justify-content-center">
+        <button id="startTimer" data-toggle="modal" type="button" class="btn btn-success">Start Timer</button>
+        <button id="recordReact" type="button" class="btn btn-warning" onclick="recordReact()">React Now</button>
+    </div>
+
+    <script>
+        var myTime = undefined;
+        function recordReact() {
+            myTime = Date.now();
+            console.log(myTime);
+        }
+    </script>
+
+</body>
+
+</html>

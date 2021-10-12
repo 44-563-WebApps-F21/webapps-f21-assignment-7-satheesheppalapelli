@@ -30,3 +30,13 @@ div.container-fluid{
     background-color:lavender;
     text-align: center;
 }
+#target{
+    background-color:lavender;
+    text-align: center;
+    color:darkmagenta;
+}
+#countDown{
+    background-color:lavender;
+    text-align: center;
+    color: cadetblue;
+}
