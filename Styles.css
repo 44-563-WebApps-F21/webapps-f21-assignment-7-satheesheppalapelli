@@ -13,15 +13,15 @@ h2:hover{
 }
 #main{
     color:burlywood;
-    text-align: left;
+    text-align: center;
 }
 #tries{
         color:deepskyblue;
-        text-align: left;
+        text-align: center;
 }
 #distance{
     color:darksalmon;
-    text-align: left;
+    text-align: center;
 }
 div.container-fluid{
     background-color:lavender;
@@ -44,7 +44,7 @@ div.container-fluid{
     color:darkseagreen;
 }
 #form-label{
-    text-align: center;
+    text-align: left;
     color:deepskyblue;
 }
 #makenewdiv{
@@ -58,6 +58,10 @@ div.container-fluid{
 #zap{
     text-align: center;
     color:orange;  
+}
+#uniqueHandler{
+    text-align: center;
+    color:yellow;  
 }
 
 .flex-container {
