@@ -14,7 +14,7 @@
     <label for="exampleDataList" class="form-label" id="form-label">Press the button to create an new element of type
         div and then add it to the container.</label>
     <br><br>
-    <button id="makenewdiv" onclick="makeNewDiv()">Push value</button>
+    <button id="stack" onclick="stack()">Push value</button>
     <button id="popitem" onclick="popItem()">Pop</button>
     <button id="zap" onclick="zap()">Zap value</button>
     <button id="uniqueHandler" onclick="uniqueHandler()">Unique</button>
@@ -27,7 +27,7 @@
 </body>
 <script>
 
-    function makeNewDiv() {
+    function stack() {
         let element = document.createElement("div")
         value = document.getElementById("form_input").value
         element.innerHTML = value
@@ -58,9 +58,9 @@
                     stackItems[index].remove();
                     index--;
                 }
-
             }
         }
+        console.log("We are getting rid of all elements with " + input + "'")
     }
 
     function uniqueHandler() {
@@ -71,17 +71,12 @@
             for (let insideIndex = index + 1; insideIndex < length; insideIndex++) {
                 let elementInside = stackItems[insideIndex].innerHTML;
                 if (element == elementInside) {
-                    console.log(stackItems[insideIndex])
                     stackItems[insideIndex].remove();
                     insideIndex--;
                     index--;
                 }
-
-
             }
-
         }
-
     }
 </script>
 
