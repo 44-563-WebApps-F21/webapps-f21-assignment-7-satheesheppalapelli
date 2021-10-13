@@ -45,15 +45,16 @@
         }
     }
 
-    function Zapvalues() {
-        let data = document.getElementById("input").value;
+    function zap() {
         let stackItems = document.getElementsByClassName('stack');
-        if (stackItems != undefined && stackItems.length > 0) {
-            let stacksLength = stackItems.length;
-            for (let index = 0; index < stackItems.length; index++) {
+        let data = document.getElementById("form_input").value;
+        length = stackItems.length;
+        if (stackItems != undefined && length > 0) {
+            let stacksLength = length;
+            for (let index = 0; index < length; index++) {
                 let element = stackItems[index].innerHTML;
                 if (element == data) {
-                    console.log(stackItems[index])
+                    console.log(stackItems[index].innerHTML)
                     stackItems[index].remove();
                     index--;
                 }
@@ -64,9 +65,10 @@
 
     function uniqueHandler() {
         let stackItems = document.getElementsByClassName('stack');
-        for (let index = 0; index < stackItems.length; index++) {
+        length = stackItems.length;
+        for (let index = 0; index < length; index++) {
             let element = stackItems[index].innerHTML;
-            for (let insideIndex = index + 1; insideIndex < stackItems.length; insideIndex++) {
+            for (let insideIndex = index + 1; insideIndex < length; insideIndex++) {
                 let elementInside = stackItems[insideIndex].innerHTML;
                 if (element == elementInside) {
                     console.log(stackItems[insideIndex])
