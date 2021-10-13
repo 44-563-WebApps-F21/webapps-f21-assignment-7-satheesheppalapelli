@@ -50,7 +50,7 @@
         let data = document.getElementById("form_input").value;
         length = stackItems.length;
         if (stackItems != undefined && length > 0) {
-            let stacksLength = length;
+            let stacksLength = stackItems.length;
             for (let index = 0; index < length; index++) {
                 let element = stackItems[index].innerHTML;
                 if (element == data) {
