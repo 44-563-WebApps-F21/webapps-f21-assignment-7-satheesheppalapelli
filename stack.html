@@ -8,15 +8,14 @@
 
 <body>
     <h2>Satheesh Eppalapelli builds a stack</h2>
-    <br>
     <input type="text" class="form-control" id="form_input" name="inputElement" placeholder="Enter a Text">
     <br><br>
     <label for="exampleDataList" class="form-label" id="form-label">Press the button to create an new element of type
         div and then add it to the container.</label>
     <br><br>
-    <button id="stack" onclick="stack()">Push value</button>
+    <button id="stack" onclick="stack()">Push </button>
     <button id="popitem" onclick="popItem()">Pop</button>
-    <button id="zap" onclick="zap()">Zap value</button>
+    <button id="zap" onclick="zap()">Zap </button>
     <button id="uniqueHandler" onclick="uniqueHandler()">Unique</button>
     <br><br>
     <div class="flex-container" id="target">
@@ -25,7 +24,7 @@
         <div class="stack">row item 3</div>
     </div>
 </body>
-<script>
+<script async>
 
     function stack() {
         let element = document.createElement("div")
@@ -39,7 +38,7 @@
         stackItems = document.getElementsByClassName("stack")
         value = document.getElementById("form_input").value
         length = stackItems.length
-        // alert(length);
+        alert(length);
         if (stackItems != undefined && length > 0) {
             stackItems[length - 1].remove();
         }
@@ -54,7 +53,7 @@
             for (let index = 0; index < length; index++) {
                 let element = stackItems[index].innerHTML;
                 if (element == data) {
-                    console.log(stackItems[index].innerHTML)
+                    console.log(stackItems[index])
                     stackItems[index].remove();
                     index--;
                 }
@@ -72,6 +71,7 @@
                 let elementInside = stackItems[insideIndex].innerHTML;
                 if (element == elementInside) {
                     stackItems[insideIndex].remove();
+                    console.log("removed_element", stackItems)
                     insideIndex--;
                     index--;
                 }
